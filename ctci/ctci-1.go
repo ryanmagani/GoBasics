@@ -5,11 +5,14 @@ import (
 )
 
 func main() {
+	fmt.Println("\nStart CTCI-1")
 	uniqueCharacters("uniqe")
 	uniqueCharacters("hello")
 	reverseString("hello")
+	fmt.Println("End CTCI-1\n")
 }
 
+// 1.1
 func uniqueCharacters(word string) bool {
 	// we deal with bytes not characters
 	// becuase there's no basic char
@@ -37,6 +40,7 @@ func uniqueCharacters(word string) bool {
 	return true
 }
 
+// 1.2
 func reverseString(word string) string {
 	// Arrays in Go must be constant size, so we use
 	// a slice instead. make() is a special
